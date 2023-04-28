@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="./assets/style.css" rel="stylesheet" type="text/css" />
+    <title>Personas</title>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Tipo de sangre</th>
+            <th>Nss</th>
+            <th>Modificar</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <% for (let i = 0; i < data.length; i++) { %>
+                <tr>
+                    <td><%=data[i].Nombre%></td>
+                    <td><%=data[i].Edad%></td>
+                    <td><%=data[i].TipoSangre%></td>
+                    <td><%=data[i].Nss%></td>
+                    <td><a href="localhost:3000/modificar">Modificar</a></td>
+                    <td><a href="localhost:3000/eliminar">Eliminar</a></td>
+                  </tr>
+            <% } %>            
+        </tbody>
+    </table>
+    <br>
+    <a href="localhost:3000/agregar">Agregar</a>
+</body>
+</html>

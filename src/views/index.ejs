@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link href="./assets/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/style.css"/>
     <title>Personas</title>
 </head>
 <body>
@@ -20,10 +20,10 @@
         <tbody>
             <% for (let i = 0; i < data.length; i++) { %>
                 <tr>
-                    <td><%=data[i].Nombre%></td>
-                    <td><%=data[i].Edad%></td>
-                    <td><%=data[i].TipoSangre%></td>
-                    <td><%=data[i].Nss%></td>
+                    <td><%=data[i].nombre%></td>
+                    <td><%=data[i].edad%></td>
+                    <td><%=data[i].tipoSangre%></td>
+                    <td><%=data[i].nss%></td>
                     <td><a href="localhost:3000/modificar">Modificar</a></td>
                     <td><a href="localhost:3000/eliminar">Eliminar</a></td>
                   </tr>

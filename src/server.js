@@ -9,6 +9,7 @@ mongoose.Promise=global.Promise;
 const app=express();    //iniciamos la aplicacion de express
 const port=process.env.PORT || 3000;    //usamos el puerto establecido, si no usamos el puerto 3000
 
+app.use('/assets', express.static(__dirname+'/public'));
 app.set('view engine', 'ejs');  //establecemos el motor de vistas
 app.use(express.urlencoded({extended: false}));
 app.use(personsRoutes); //usamos la ruta de persons
@@ -22,7 +23,7 @@ app.get("/", (req,res)=>{
 
 //coneccion con mongoDB
 mongoose
-.connect('mongodb+srv://lnava6:d3is9SlyHSeSLVgb@cluster0.ztizo6u.mongodb.net/test?retryWrites=true&w=majority') 
+.connect('mongodb+srv://lnava6:aCAAB0be0rgX7Tcd@cluster0.otir5zv.mongodb.net/test') 
 .then(()=>console.log('connected to MongoDB Atlas database "TEST"'))//mensaje a la consola para verificar la conexion
 .catch((error)=>console.log(error))//en caso de error
 

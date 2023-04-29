@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
-}
+    position: absolute;
+align-content: center;}
 
 table{
     border-collapse: collapse;
@@ -15,8 +16,52 @@ table td {
   
 }
 table th {
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(33, 165, 141);
 }
 table td {
-    background-color: rgb(161, 162, 162);
+    background-color: rgba(114, 176, 164, 0.761);
+}
+
+.agregar-btn{
+text-align: center;
+background-color: rgb(160, 204, 94);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-decoration: none;
+border-radius: 10px;
+padding: 6px 12px;
+color: black;
+}
+
+.modificar-btn{
+    text-align: center;
+    background-color: rgb(57, 139, 246);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 2px 7px;
+    color: black;
+
+}
+
+.eliminar-btn{
+text-align: center;
+background-color: rgb(255, 79, 79);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-decoration: none;
+border-radius: 10px;
+padding: 2px 7px;
+color: black;
+}
+
+.div-form{
+    background-color: rgb(214, 255, 196);
+position: absolute;
+padding-left: 50px;
+padding-right: 50px;
+
+}
+
+.div-center{
+padding: 100px;
+padding-left: 550px;
 }

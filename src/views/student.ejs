@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style.css"/>
     <title>Formulario</title>
 </head>
 <body>
     <center>
+        <div class="div-center">
+        <div class="div-form">
         <form action="/addStudent" method="POST">
-            <legend><h1>Agregar Estudiante</h1></legend>
+                <h1>Agregar Estudiante</h1>
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre"><br/><br/>
             <label for="nss">Nss</label>
@@ -17,8 +20,10 @@
             <label for="tpSangre">Tipo de sangre</label>
             <input type="text" id="tipoSangre" name="tipoSangre"><br/><br/>
             
-            <input type="submit" value="submit">
+            <input class='agregar-btn' type="submit" value="Agregar">
         </form>
+    </div>
+</div>
     </center>
 </body>
 </html>
